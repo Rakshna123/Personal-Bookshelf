@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    background-image: url('../Assets/bg image.avif');
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    background: salmon;
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    height: 40px;
+    width: 150px;
+    background-color: chartreuse;
+    border-radius: 10px;
+    padding-top: 14px;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  
+  nav a:hover {
+    color: black;
+    transform: scale(1.2);
+    background-color: rgb(10, 180, 247);
+  }
+  
+  .App {
+    padding: 20px;
+  }
+  
+  input {
+    width: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 5px 6px 8px black;
+    margin-top: 100px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  input:hover {
+    transform: scale(1.3);
+  }
+  
+  .book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start; /* Align items from left to right */
+  }
+  
+  .book-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+  }
+  
+  .book-card img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  
+  .book-card h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .book-card p {
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .book-card button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .book-card button:hover {
+    background: #0056b3;
+  }
+  
+  .book-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .bookshelf-heading {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background-color: purple;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    margin: 20px auto;
+    text-align: center;
+    width: fit-content;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .bookshelf-heading:hover {
+    background-color: red;
+    color: black;
+  }
+  
+  .quote-box {
+    position: absolute;
+    top: 100%;
+    left: 300px;
+    transform: translateX(-50%);
+    width: 300px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: aqua;
+    color: black;
+    font-size: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+    z-index: 1;
+    text-align: center;
+    display: none; /* Initially hidden */
+  }
+  
+  .bookshelf-heading:hover .quote-box {
+    display: block; /* Display when hovering over .bookshelf-heading */
+  }
+  
+  .addBook {
+    background-color: rgb(11, 165, 225);
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    border: 3px solid black;
+    font-weight: bolder;
+  }
+  
+  .addBook:hover {
+    background-color: deeppink;
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  
+  .title {
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    height: 45px;
+    width: 240px;
+    background-color: orchid;
+    border-radius: 10px;
+    align-items: center;
+    padding-top: 18px;
+    cursor: pointer;
+    margin-left: 25px;
+    border: 3px solid black;
+  }
+  
+  .name {
+    background-color: gold;
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    margin-left: 45px;
+    font-weight: bolder;
+    border: 3px solid black;
+    padding-top: 5px;
+  }
+  
+  .books {
+    width: 300px;
+    height: 250px;
+    background-color: wheat;
+    border: 3px solid black;
+    /* margin-left: 600px; */
+    margin-left: 55px;
+    margin-top: 15px;
+    border-radius: 10px;
+  }
+  .books:hover{
+    transform: scale(1.1);
+    box-shadow: 4px 5px 5px 5px black;
+    cursor: pointer;
+    background-color: pink;
+  }
+  .main{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
